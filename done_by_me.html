@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do LIST</title>
+    <style>
+        body{
+            background-color: #ececec;
+            margin: 0%;
+            text-align: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            
+
+        }
+        .container{
+            background-color: #a2a8d3;
+            padding: 10px 20px;
+            border-radius: 8px;
+
+        }
+        .inner-container{
+            margin-top: 20px;
+        }
+
+        input[type="text"]{
+            padding: 8px;
+            border-radius: 3px;
+            width: 200px;
+            
+        }
+        button{
+            background: rgb(139, 237, 139);
+            border-radius: 3px;
+             cursor: pointer;
+             padding: 5px ;
+             margin-left: 10px;
+             color: rgb(48, 49, 49);
+        }
+        ul{
+            padding: 0px;
+           list-style: none;
+           margin-left: auto;
+           margin-right: auto;
+           max-width: 300px;
+
+        }
+        ul li{
+           
+          background-color: rgb(99, 99, 101);
+          display: flex;
+          justify-content: space-between;
+          align-items:center;
+          border-radius: 6px;
+          font-weight: 400;
+          font-size: 16px;
+          padding: 10px 15px; 
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border-bottom: 1px solid #444;
+           transition: background-color 0.2s ease;
+            
+        }
+
+        .button-li{
+            background-color: #d01b1b;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+       ul li:hover {
+            background-color: #f8f3f3;
+        }
+
+        .completed span {
+    text-decoration: line-through;
+    color: black;
+}
+
+    </style>
+
+
+
+ </head>
+ <body>
+    <div class="container">
+        <h2>TO-DO LIST</h2>
+        <form >
+            <div class="inner-container">
+                <input type="text" id="inputTake" placeholder="Enter something to do...">
+                <button id="sumbitIt"> Sumbit</button>
+            </div>
+            <ul id="addList">
+
+            </ul>
+        </form>
+    </div>
+    <script src="./done_me.js"></script>
+    
+</body>
+</html>

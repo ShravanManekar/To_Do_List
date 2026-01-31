@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode To-Do List </title>
+
+
+
+    <style>
+
+        
+       body {
+    background: #1a1a1a;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center;     /* vertically center */
+}
+
+.container {
+    background-color: #2a2a2a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.input-container {
+    margin-top: 15px;
+  
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li {
+    background-color: #3a3a3a;
+    color: white;
+     display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 15px; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid #444;
+    font-size: 16px;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+.delete-btn {
+    background-color: red; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #4a4a4a;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: black;
+}
+
+
+
+          
+          
+        
+    </style>
+   
+    
+</head>
+<body>
+    <div class="container">
+        <h1>TO-DO List</h1>
+        <div class="input-container">
+            <input type="text" id="to-do-input" placeholder="Add a new task...">
+            <button id="add-task-bn">Add Task</button>
+
+        </div>
+        <ul id="to-do-list"></ul>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
